@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣上班上課狀態(10/04)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .city-status {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .break-yes {
+            background-color: #ffcccc; /* Light red */
+            color: #d80000; /* Dark red */
+        }
+        .break-some {
+            background-color: #ffe6cc; /* Light orange */
+            color: #b86d00; /* Dark orange */
+        }
+        .break-no {
+            background-color: #ccffcc; /* Light green */
+            color: #007300; /* Dark green */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>台灣上班上課狀態(10/04)</h1>
+    <div id="city-list"></div>
+
+    <script>
+        const jsonData = {
+            "cities": [
+                { "name": "基隆市", "break": "no", "other": false },
+                { "name": "臺北市", "break": "no", "other": false },
+                { "name": "新北市", "break": "some", "other": "瑞芳區:明天停止上班、停止上課。" },
+                { "name": "桃園市", "break": "no", "other": false },
+                { "name": "新竹市", "break": "no", "other": false },
+                { "name": "新竹縣", "break": "no", "other": false },
+                { "name": "苗栗縣", "break": "no", "other": false },
+                { "name": "臺中市", "break": "no", "other": false },
+                { "name": "彰化縣", "break": "no", "other": false },
+                { "name": "雲林縣", "break": "no", "other": false },
+                { "name": "南投縣", "break": "no", "other": false },
+                { "name": "嘉義市", "break": "no", "other": false },
+                { "name": "嘉義縣", "break": "no", "other": false },
+                { "name": "臺南市", "break": "no", "other": false },
+                { "name": "高雄市", "break": "yes", "other": false },
+                { "name": "屏東縣", "break": "yes", "other": false },
+                { "name": "宜蘭縣", "break": "no", "other": false },
+                { "name": "花蓮縣", "break": "some", "other": "秀林鄉和平村及大天祥地區(含富世村布洛灣及富世村13~19鄰範圍）:明天停止上班、停止上課。" },
+                { "name": "臺東縣", "break": "no", "other": false },
+                { "name": "澎湖縣", "break": "no", "other": false },
+                { "name": "連江縣", "break": "no", "other": false },
+                { "name": "金門縣", "break": "no", "other": false }
+            ]
+        };
+
+        const cityList = document.getElementById('city-list');
+
+        jsonData.cities.forEach(city => {
+            const cityDiv = document.createElement('div');
+            cityDiv.classList.add('city-status');
+
+            let statusText = `${city.name}: `;
+
+            if (city.break === "yes") {
+                statusText += "放假";
+                cityDiv.classList.add('break-yes');
+            } else if (city.break === "some") {
+                statusText += "部分上班、部分上課";
+                statusText += city.other ? ` (${city.other})` : '';
+                cityDiv.classList.add('break-some');
+            } else {
+                statusText += "正常上班上課";
+                cityDiv.classList.add('break-no');
+            }
+
+            cityDiv.textContent = statusText;
+            cityList.appendChild(cityDiv);
+        });
+    </script>
+
+</body>
+</html>
