@@ -1,112 +1,114 @@
-{  
-    "city": {  
-        "name":    "基隆市",   
-        "break":   "no",   
-        "other":    false
+{
+  "cities": [
+    {  
+      "name": "基隆市",   
+      "break": "no",   
+      "other": false
     },
-    "city": {  
-        "name":    "臺北市",   
-        "break":   "no",   
-        "other":    false
+    {  
+      "name": "臺北市",   
+      "break": "no",   
+      "other": false
     },
-    "city": {  
-        "name":    "新北市",   
-        "break":   "some",   
-        "other":   "瑞芳區:明天停止上班、停止上課。"  
-  },
-  "city": {  
-        "name":    "桃園市",   
-        "break":   "no",   
-        "other":    false
+    {  
+      "name": "新北市",   
+      "break": "some",   
+      "other": "瑞芳區:明天停止上班、停止上課。"  
     },
-    "city": {  
-        "name":    "新竹市",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "新竹縣",   
-        "break":   "no",   
-        "other":    false
+    {  
+      "name": "桃園市",   
+      "break": "no",   
+      "other": false
     },
-    "city": {  
-        "name":    "苗栗縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "臺中市",   
-        "break":   "no",   
-        "other":    false
+    {  
+      "name": "新竹市",   
+      "break": "no",   
+      "other": false
     },
-    "city": {  
-        "name":    "彰化縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "雲林縣",   
-        "break":   "no",   
-        "other":    false
+    {  
+      "name": "新竹縣",   
+      "break": "no",   
+      "other": false
     },
-  "city": {  
-        "name":    "南投縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "嘉義市",   
-        "break":   "no",   
-        "other":    false
+    {  
+      "name": "苗栗縣",   
+      "break": "no",   
+      "other": false
     },
-  "city": {  
-        "name":    "嘉義縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "臺南市",   
-        "break":   "no",   
-        "other":    false
+    {  
+      "name": "臺中市",   
+      "break": "no",   
+      "other": false
     },
-  "city": {  
-        "name":    "高雄市",   
-        "break":   "yes",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "屏東縣",   
-        "break":   "yes",   
-        "other":    false
+    {  
+      "name": "彰化縣",   
+      "break": "no",   
+      "other": false
     },
- "city": {  
-        "name":    "宜蘭縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "花蓮縣",   
-        "break":   "some",   
-        "other":   "秀林鄉和平村及大天祥地區(含富世村布洛灣及富世村13~19鄰範圍）:明天停止上班、停止上課。"
+    {  
+      "name": "雲林縣",   
+      "break": "no",   
+      "other": false
     },
-  "city": {  
-        "name":    "臺東縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "澎湖縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "連江縣",   
-        "break":   "no",   
-        "other":    false
-  },
-  "city": {  
-        "name":    "金門縣",   
-        "break":   "no",   
-        "other":    false
-  },
-}  
+    {  
+      "name": "南投縣",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "嘉義市",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "嘉義縣",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "臺南市",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "高雄市",   
+      "break": "yes",   
+      "other": false
+    },
+    {  
+      "name": "屏東縣",   
+      "break": "yes",   
+      "other": false
+    },
+    {  
+      "name": "宜蘭縣",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "花蓮縣",   
+      "break": "some",   
+      "other": "秀林鄉和平村及大天祥地區(含富世村布洛灣及富世村13~19鄰範圍）:明天停止上班、停止上課。"
+    },
+    {  
+      "name": "臺東縣",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "澎湖縣",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "連江縣",   
+      "break": "no",   
+      "other": false
+    },
+    {  
+      "name": "金門縣",   
+      "break": "no",   
+      "other": false
+    }
+  ]
+}
