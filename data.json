@@ -1,1 +1,12 @@
-
+{  
+    "city": {  
+        "name":    "臺北市",   
+        "break":   "no",   
+        "other":    false
+    },
+    "city": {  
+        "name":    "新北市",   
+        "break":   "some",   
+        "other":   "瑞芳區:明天停止上班、停止上課。"  
+  },
+}  
